@@ -1,0 +1,23 @@
+# requirements.txt
+
+# Core
+fastapi
+uvicorn[standard] # Uvicorn is the server, [standard] gives extra performance
+
+# Settings & Environment
+pydantic-settings # For reading .env files
+
+# AI
+groq  # Groq API for fast LLM inference
+
+# Database (we'll use this soon)
+sqlalchemy
+alembic # For database migrations
+
+# Security (we'll use this soon)
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+
+# Twitter API
+tweepy
